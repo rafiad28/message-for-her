@@ -1,1 +1,132 @@
-&lt;!DOCTYPE html&gt;<br/>&lt;html lang=&quot;id&quot;&gt;<br/>&lt;head&gt;<br/>    &lt;meta charset=&quot;UTF-8&quot;&gt;<br/>    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;<br/>    &lt;title&gt;A Special Message for You&lt;/title&gt;<br/>    &lt;style&gt;<br/>        * {<br/>            box-sizing: border-box;<br/>            margin: 0;<br/>            padding: 0;<br/>        }<br/>        body {<br/>            font-family: &#39;Georgia&#39;, serif;<br/>            background: linear-gradient(to bottom, #f4e8e1, #e6d5cb);<br/>            color: #4a3e3d;<br/>            text-align: center;<br/>            overflow-x: hidden;<br/>        }<br/>        .section {<br/>            min-height: 100vh;<br/>            display: flex;<br/>            flex-direction: column;<br/>            justify-content: center;<br/>            align-items: center;<br/>            padding: 40px 20px;<br/>        }<br/>        #cover {<br/>            background: linear-gradient(rgba(244,232,225,0.8), rgba(244,232,225,0.8));<br/>            position: fixed;<br/>            top: 0; left: 0; width: 100%; height: 100%;<br/>            z-index: 999;<br/>            transition: transform 0.8s ease-in-out;<br/>        }<br/>        .btn {<br/>            background-color: #b5836d;<br/>            color: white;<br/>            border: none;<br/>            padding: 15px 30px;<br/>            font-size: 18px;<br/>            border-radius: 25px;<br/>            cursor: pointer;<br/>            margin-top: 20px;<br/>            box-shadow: 0 4px 6px rgba(0,0,0,0.1);<br/>        }<br/>        h1 {<br/>            font-size: 2.5rem;<br/>            margin-bottom: 20px;<br/>            color: #6b4f42;<br/>        }<br/>        h2 {<br/>            font-size: 1.8rem;<br/>            margin-bottom: 15px;<br/>            color: #6b4f42;<br/>        }<br/>        p {<br/>            font-size: 1.2rem;<br/>            line-height: 1.8;<br/>            max-width: 600px;<br/>            margin-bottom: 20px;<br/>        }<br/>        .card {<br/>            background: rgba(255, 255, 255, 0.6);<br/>            padding: 30px;<br/>            border-radius: 15px;<br/>            box-shadow: 0 4px 15px rgba(0,0,0,0.05);<br/>            backdrop-filter: blur(5px);<br/>            margin: 15px 0;<br/>        }<br/>        .divider {<br/>            width: 50px;<br/>            height: 2px;<br/>            background-color: #b5836d;<br/>            margin: 20px auto;<br/>        }<br/>    &lt;/style&gt;<br/>&lt;/head&gt;<br/>&lt;body&gt;<div></div>    &lt;!-- AUDIO BACKSOUND --&gt;<br/>    &lt;!-- Ganti &#39;musik.mp3&#39; dengan file musik pilihanmu atau link audio online --&gt;<br/>    &lt;audio id=&quot;bgm&quot; loop&gt;<br/>        &lt;source src=&quot;https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3&quot; type=&quot;audio/mpeg&quot;&gt;<br/>    &lt;/audio&gt;<div></div>    &lt;!-- HALAMAN COVER --&gt;<br/>    &lt;div id=&quot;cover&quot; class=&quot;section&quot;&gt;<br/>        &lt;h1&gt;A Special Message&lt;/h1&gt;<br/>        &lt;p&gt;I dedicated this simple page to remember the beautiful chapters we&#39;ve shared.&lt;/p&gt;<br/>        &lt;button class=&quot;btn&quot; onclick=&quot;startPage()&quot;&gt;Buka Pesan&lt;/button&gt;<br/>    &lt;/div&gt;<div></div>    &lt;!-- UTAMA --&gt;<br/>    &lt;div id=&quot;main-content&quot;&gt;<br/>        &lt;!-- Bagian 1: What Makes Her Special --&gt;<br/>        &lt;div class=&quot;section&quot;&gt;<br/>            &lt;h2&gt;What Makes You Special&lt;/h2&gt;<br/>            &lt;div class=&quot;divider&quot;&gt;&lt;/div&gt;<br/>            &lt;p class=&quot;card&quot;&gt;<br/>                &quot;She has a unique way of making the darkest days feel bright. Her laughter is my favorite sound, and her warmth makes me feel completely safe and loved. What makes her special is how genuinely she cares for others, and how she effortlessly brings peace and joy into life just by being herself.&quot;<br/>            &lt;/p&gt;<br/>        &lt;/div&gt;<div></div>        &lt;!-- Bagian 2: Cherished Memories --&gt;<br/>        &lt;div class=&quot;section&quot;&gt;<br/>            &lt;h2&gt;Cherished Memories&lt;/h2&gt;<br/>            &lt;div class=&quot;divider&quot;&gt;&lt;/div&gt;<br/>            &lt;div class=&quot;card&quot; style=&quot;max-width: 600px;&quot;&gt;<br/>                &lt;p&gt;I deeply cherish the beautiful moments we&#39;ve shared together...&lt;/p&gt;<br/>                &lt;p style=&quot;font-style: italic; font-size: 1.1rem; color: #8a6d60;&quot;&gt;<br/>                    • Getting caught in the rain and eating warm chicken porridge together.&lt;br&gt;<br/>                    • The sweet, unexpected birthday surprise that completely caught me off guard.&lt;br&gt;<br/>                    • And your gentle care when you prepared warm water for my feet when I was freezing.<br/>                &lt;/p&gt;<br/>            &lt;/div&gt;<br/>        &lt;/div&gt;<div></div>        &lt;!-- Bagian 3: Final Message --&gt;<br/>        &lt;div class=&quot;section&quot;&gt;<br/>            &lt;h2&gt;A Pure Thank You&lt;/h2&gt;<br/>            &lt;div class=&quot;divider&quot;&gt;&lt;/div&gt;<br/>            &lt;p class=&quot;card&quot;&gt;<br/>                &quot;Even though we haven&#39;t talked in a while, I just want you to know how deeply grateful I am for all the beautiful memories we shared. Your kindness and warmth will always mean a lot to me, and I sincerely wish you nothing but happiness in everything you do.&quot;<br/>            &lt;/p&gt;<br/>            &lt;p style=&quot;font-size: 0.9rem; color: #8a6d60; margin-top: 40px;&quot;&gt;With all my gratitude.&lt;/p&gt;<br/>        &lt;/div&gt;<br/>    &lt;/div&gt;<div></div>    &lt;script&gt;<br/>        function startPage() {<br/>            // Putar Musik<br/>            var audio = document.getElementById(&quot;bgm&quot;);<br/>            audio.play().catch(function(error) {<br/>                console.log(&quot;Audio autoplay diblokir oleh browser:&quot;, error);<br/>            });<br/>            <br/>            // Sembunyikan Cover dengan transisi geser atas<br/>            document.getElementById(&quot;cover&quot;).style.transform = &quot;translateY(-100%)&quot;;<br/>        }<br/>    &lt;/script&gt;<br/>&lt;/body&gt;<br/>&lt;/html&gt;<br/>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Message for You</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(to bottom, #f4e8e1, #e6d5cb);
+            color: #4a3e3d;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        .section {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+        #cover {
+            background: linear-gradient(rgba(244,232,225,0.9), rgba(244,232,225,0.9));
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            z-index: 999;
+            transition: transform 0.8s ease-in-out;
+        }
+        .btn {
+            background-color: #b5836d;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 25px;
+            cursor: pointer;
+            margin-top: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #6b4f42;
+        }
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #6b4f42;
+        }
+        p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            max-width: 600px;
+            margin-bottom: 20px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.6);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            backdrop-filter: blur(5px);
+            margin: 15px 0;
+        }
+        .divider {
+            width: 50px;
+            height: 2px;
+            background-color: #b5836d;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+
+    <audio id="bgm" loop>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="cover" class="section">
+        <h1>A Special Message</h1>
+        <p>I dedicated this simple page to remember the beautiful chapters we've shared.</p>
+        <button class="btn" onclick="startPage()">Buka Pesan</button>
+    </div>
+
+    <div id="main-content">
+        <div class="section">
+            <h2>What Makes You Special</h2>
+            <div class="divider"></div>
+            <p class="card">
+                "She has a unique way of making the darkest days feel bright. Her laughter is my favorite sound, and her warmth makes me feel completely safe and loved. What makes her special is how genuinely she cares for others, and how she effortlessly brings peace and joy into life just by being herself."
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Cherished Memories</h2>
+            <div class="divider"></div>
+            <div class="card" style="max-width: 600px;">
+                <p>I deeply cherish the beautiful moments we've shared together...</p>
+                <p style="font-style: italic; font-size: 1.1rem; color: #8a6d60; margin-top: 15px;">
+                    • Getting caught in the rain and eating warm chicken porridge together.<br>
+                    • The sweet, unexpected birthday surprise that completely caught me off guard.<br>
+                    • And your gentle care when you prepared warm water for my feet when I was freezing.
+                </p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>A Pure Thank You</h2>
+            <div class="divider"></div>
+            <p class="card">
+                "Even though we haven't talked in a while, I just want you to know how deeply grateful I am for all the beautiful memories we shared. Your kindness and warmth will always mean a lot to me, and I sincerely wish you nothing but happiness in everything you do."
+            </p>
+            <p style="font-size: 0.9rem; color: #8a6d60; margin-top: 40px;">With all my gratitude.</p>
+        </div>
+    </div>
+
+    <script>
+        function startPage() {
+            var audio = document.getElementById("bgm");
+            audio.play().catch(function(error) {
+                console.log("Audio play blocked:", error);
+            });
+            document.getElementById("cover").style.transform = "translateY(-100%)";
+        }
+    </script>
+</body>
+</html>
